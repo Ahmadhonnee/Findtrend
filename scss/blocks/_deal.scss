@@ -17,25 +17,10 @@
         height: 70px;
         padding: 30px;
         transition: all .2s ease-in;
-        &__input{
-            appearance: none;
-            &:checked~.switch>.switch__toggle>.switch__ellipse::before{
-                left: 62px;
-            }
-            &:checked~.switch>.switch__year{
-                opacity: 0.5;
-            }
-            &:checked~.switch>.switch__month{
-                opacity: 1;
-            }
-        }
         .switch{
             display: flex;
             align-items: center;
             transition: all .2s ease-in;
-            &__month{
-                opacity: 0.5;
-            }
             &__month,&__year{
                 font-weight: 500;
                 font-size: 24px;
@@ -43,6 +28,10 @@
                 color: #FFFFFF;
                 user-select: none;
                 transition: all .2s ease-in;
+                opacity: 0.5;
+            }
+            &__month{
+                opacity: 1;
             }
             &__toggle{
                 display: flex;
@@ -71,6 +60,18 @@
                     border-radius: 50%;
                     transition: all .3s ease-in;
                 }
+            }
+        }
+        &__input{
+            appearance: none;
+            &:checked~.switch>.switch__toggle>.switch__ellipse::before{
+                left: 62px;
+            }
+            &:checked~.switch>.switch__year{
+                opacity: 1;
+            }
+            &:checked~.switch>.switch__month{
+                opacity: 0.5;
             }
         }
     }
