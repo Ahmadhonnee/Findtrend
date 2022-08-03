@@ -1,0 +1,75 @@
+.joinus{
+    background: #A8FF35;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 140px 0; 
+    h2{
+        width: 780px;
+        font-weight: 900;
+        font-size: 72px;
+        line-height: 112%;
+        text-align: center;
+        color: #000000;
+        span{
+            color: #87D322;
+        }
+    }
+    &__btn{
+        padding: 16px 52px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 140%;
+        text-align: center;
+        color: #FFFFFF;
+        background: #000000;
+        border-radius: 40px;
+    }
+}
+@media only screen and (max-width:860px) {
+    .joinus{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        padding: 140px 0; 
+        h2{
+            width: 650px;
+            font-size: 58px;
+        }
+        &__btn{
+            padding: 12px 42px;
+            font-size: 12px;
+
+        }
+    }
+}
+@media only screen and (max-width:675px) {
+    .joinus{
+        gap: 40px;
+        padding: 140px 0; 
+        h2{
+            width: 100%;
+            font-size: 50px;
+        }
+        // &__btn{
+        //     // padding: 12px 42px;
+        //     // font-size: 12px;
+
+        // }
+    }
+}
+@media only screen and (max-width:675px) {
+    .joinus{
+        gap: 40px;
+        padding: 140px 0; 
+        h2{
+            font-size: 35px;
+        }
+        &__btn{
+            padding: 10px 40px;
+        }
+    }
+}

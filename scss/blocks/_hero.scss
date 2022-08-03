@@ -1,0 +1,358 @@
+.hero{
+    background: url(https://assets.website-files.com/6233f2ac51d2013d6dca2856/623a741eedaf0d4909e57ac1_Bg-hero.svg) #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+    min-width: 310px;
+    &__intro{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        padding: 0 250px;
+        transition: all .3s ease-in;
+    }
+    &__title{
+        width: 700px;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 72px;
+        line-height: 112%;
+        text-align: center;
+        color: #FFFFFF;
+        transition: all .3s ease-in;
+    }
+    &__desc{
+        width: 700px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        text-align: center;
+        color: #8B8B8B;
+        transition: all .3s ease-in;
+    }
+    &__btn{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 140%;
+        text-align: center;
+        color: #000000;
+        transition: all .3s ease-in;
+
+        background: #A8FF35;
+        text-decoration: none;
+        padding-top: 16px;
+        display: inline-block;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            left: 120%;
+            top: -10px;
+            width: 100px;
+            height: 70px;
+            background: url(../img/img-hero.svg) no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+    }
+    &__cards{
+        margin-top: 100px;
+        z-index: 1;
+        transition: all .3s ease-in;
+        .card{
+            z-index: 3;
+            position: relative;
+            padding: 30px;
+            background: #181818;
+            width: 342px;
+            overflow: clip;
+            transform: translateX(0px) rotate(-4deg);
+            box-shadow: 7px 4px 8px black;
+            transition: all .3s ease-in;
+            &::before{
+                content: "";
+                position: absolute;
+                top: 0px;
+                bottom: 0px;
+                margin: auto;
+                left: 30px;
+                width: 32px;
+                height: 32px;
+                background: url(../img/Twitter.png) no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                top: 0px;
+                bottom: 0px;
+                margin: auto;
+                right: 20px;
+                width: 15px;
+                height: 15px;
+                background: url(../img/x.svg) no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+            &__desc{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 23.8065px;
+                line-height: 28px;
+                text-align: center;
+                color: #FFFFFF;
+                padding-left: 50px;
+                width: 250px;
+                overflow: clip;
+                white-space: nowrap;
+            }
+            &__shadow{
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                width: 80px;
+                height: 100%;
+                background: linear-gradient(270deg, #181818 53.65%, rgba(24, 24, 24, 0.334) 100%);
+            }
+        }
+        .card2{
+            z-index: 2;
+            transform: translateY(-28px) translateX(300px) rotate(2deg);
+            transition: all .3s ease-in;
+            &::before{
+                background: url(../img/Pinterest.png) no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+        }
+        .card3{
+            z-index: 1;
+            transform: translateY(-180px) translateX(550px) rotate(-2deg);
+            transition: all .3s ease-in;
+            &::before{
+                background: url(../img/Facebook.png) no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+        }
+        .card4{
+            transform: translateX(840px) translateY(-210px) rotateZ(4deg);
+            z-index: 0;
+            transition: all .3s ease-in;
+            &::before{
+                background: url(../../img/basketball.png) no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+        }
+    }
+}
+@media only screen and (max-width:1390px) {
+    .hero{
+        &__intro{
+            padding: 0 200px;
+        }
+        &__cards{
+            .card2{
+                transform: translateY(-28px) translateX(280px) rotate(2deg);
+            }
+            .card3{
+                transform: translateY(-180px) translateX(520px) rotate(-2deg);
+            }
+            .card4{
+                transform: translateX(810px) translateY(-210px) rotateZ(4deg);
+            }
+        }
+    }
+}
+@media only screen and (max-width:1320px) {
+    .hero{
+        &__cards{
+            .card2{
+                transform: translateY(-28px) translateX(250px) rotate(2deg);
+            }
+            .card3{
+                transform: translateY(-180px) translateX(490px) rotate(-2deg);
+            }
+            .card4{
+                transform: translateX(780px) translateY(-210px) rotateZ(4deg);
+            }
+        }
+    }
+}
+@media only screen and (max-width:1290px) {
+    .hero{
+        &__cards{
+            .card2{
+                transform: translateY(-28px) translateX(220px) rotate(2deg);
+            }
+            .card3{
+                transform: translateY(-180px) translateX(460px) rotate(-2deg);
+            }
+            .card4{
+                transform: translateX(750px) translateY(-210px) rotateZ(4deg);
+            }
+        }
+    }
+}
+@media only screen and (max-width:1280px) {
+    .hero{
+        &__intro{
+            padding: 0 150px;
+        }
+        &__cards{
+            .card2{
+                transform: translateY(-28px) translateX(190px) rotate(2deg);
+            }
+            .card3{
+                transform: translateY(-180px) translateX(430px) rotate(-2deg);
+            }
+            .card4{
+                transform: translateX(720px) translateY(-210px) rotateZ(4deg);
+            }
+        }
+    }
+}
+@media only screen and (max-width:1195px) {
+    .hero{
+        &__intro{
+            padding: 0 100px;
+        }
+        &__cards{
+            .card2{
+                transform: translateY(-28px) translateX(160px) rotate(2deg);
+            }
+            .card3{
+                transform: translateY(-180px) translateX(400px) rotate(-2deg);
+            }
+            .card4{
+                transform: translateX(600px) translateY(-210px) rotateZ(4deg);
+            }
+        }
+    }
+}
+@media only screen and (max-width:1145px) {
+    .hero{
+        &__intro{
+            padding: 0 100px;
+            transition: padding .5s ease-in;
+        }
+        &__cards{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: all .2s ease-in;
+            .card2{
+                transform: translateY(0) translateX(0) rotate(2deg);
+            }
+            .card3{
+                transform: translateY(0) translateX(0) rotate(-2deg);
+            }
+            .card4{
+                transform: translateX(0) translateY(0) rotateZ(4deg);
+            }
+        }
+    }
+}
+@media only screen and (max-width:985px) {
+    .hero{
+        &__title{
+            font-size: 50px;
+            width: 500px;
+        }
+        &__desc{
+            font-size: 14px;
+            width: 500px;
+        }
+        &__btn{
+            font-size: 14px;
+            padding: 14px 28px;
+        }
+        &__intro{
+            padding: 0;
+        }
+    }
+}
+@media only screen and (max-width:560px) {
+    .hero{
+        &__intro{
+            gap: 20px;
+            padding: 0px;
+        }
+        &__title{
+            width: 350px;
+            font-size: 32px;
+        }
+        &__desc{
+            font-size: 8px;
+            width: 350px;
+        }
+        &__btn{
+            font-size: 12px;
+            padding: 12px 26px;
+        }
+    }
+}
+@media only screen and (max-width:430px) {
+    .hero{
+        &__title{
+            width: 100%;
+            font-size: 30px;
+        }
+        &__desc{
+            font-size: 8px;
+            width: 100%;
+        }
+        &__btn{
+            font-size: 8px;
+            padding: 8px 16px;
+            &::after{
+                position: absolute;
+                left: 100%;
+                top: 0px;
+                width: 60px;
+                height: 20px;
+            }
+        }
+    }
+}
+@media only screen and (max-width:570px) {
+    .hero__cards{
+        margin-top: 70px;
+        .card{
+            padding: 25px;
+            width: 250px;
+            &__desc{
+                font-size: 12px;
+                padding-left: 50px;
+                width: 200px;
+                white-space: normal;
+            }
+            &__shadow{
+                width: 40px;
+            }
+        }
+    }
+}
+@media only screen and (max-width:310px) {
+    .hero__cards{
+        .card{
+            padding: 20px;
+            width: 240px;
+            &__desc{
+                font-size: 10px;
+                padding-left: 40px;
+                width: 200px;
+            }
+        }
+    }
+}

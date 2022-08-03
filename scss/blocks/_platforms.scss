@@ -1,0 +1,382 @@
+.platforms{
+    padding: 140px 0;
+    background: #FAFAFA;
+    transition: all .2s ease-in;
+    &__title{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 76px;
+        text-align: center;
+        color: #000000;
+        transition: all .3s ease-in;
+    }
+    &__cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 10px;
+        margin: 75px 0;
+        transition: all .3s ease-in;
+        .card{
+            width: 124px;
+            height: 124px;
+            background: #FFFFFF;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all .3s ease-in;
+            margin: auto;
+            &:hover{
+                background-color: #A8FF35;
+                transform: translate(0px, -5px);
+            }
+            &__media{
+                width: 60px;
+                height: 60px;
+                background: url(../img/m1.png) no-repeat;
+                background-position: center;
+                background-size: contain;
+                transition: all .3s ease-in;
+            }
+            .m2{
+                background: url(../img/m2.png) no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+            .m3{
+                background: url(../img/m3.png) no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+            .m4{
+                background: url(../img/m4.png) no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+            .m5{
+                background: url(../img/m5.png) no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+            .m6{
+                background: url(../img/m6.png) no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+            .m7{
+                background: url(../img/m7.png) no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+            .m8{
+                background: url(../img/m8.png) no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+        }
+    }
+    &__twitter{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        transition: all .2s ease-in;
+        &__cards{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 43px;
+            transition: all .3s ease-in;
+            &__card{
+                width: 800px;
+                height: 274px;
+                background: url(../img/tcard1.png) no-repeat #FFFFFF;
+                background-position: center;
+                background-size: contain;
+                border-radius: 4px;
+                box-shadow: 3px 4px 3px  #9d9d9d;
+                transition: all .3s ease-in;
+            }
+            .tcard2{
+                height: 800px;
+                background: url(../img/tcard2.png) no-repeat #FFFFFF;
+                background-position: center;
+                background-size: contain;
+            }
+            .tcard3{
+                background: url(../img/tcard3.png) no-repeat #FFFFFF;
+                background-position: center;
+                background-size: contain;
+            }
+        }
+        &__btn{
+            text-decoration: none;
+
+            background: #000000;
+            color: #FFFFFF;
+            margin-top: 80px;
+        }
+    }
+}
+@media only screen and (max-width:1145px) {
+    .platforms{
+        // padding: 140px 0;
+        &__title{
+            font-size: 55px;
+            line-height: 72px;    
+        }
+        &__cards{
+            // grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            // grid-template-rows: 1fr;
+            // margin: 75px 0;
+            .card{
+                width: 100px;
+                height: 100px;
+                // border-radius: 8px;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                &__media{
+                    width: 52px;
+                    height: 52px;
+                }
+            }
+        }
+        &__twitter{
+            &__cards{
+                gap: 40px;
+                &__card{
+                    width: 780px;
+                    height: 270px;
+                    border-radius: 4px;
+                    // box-shadow: 3px 4px 3px  #9d9d9d;
+                }
+                .tcard2{
+                    height: 780px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:920px) {
+    .platforms{
+        // padding: 140px 0;
+        &__title{
+            font-size: 50px;
+            line-height: 65px;    
+        }
+        &__cards{
+            // grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            // grid-template-rows: 1fr;
+            // margin: 75px 0;
+            .card{
+                width: 90px;
+                height: 90px;
+                // border-radius: 8px;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                &__media{
+                    width: 45px;
+                    height: 45px;
+                }
+            }
+        }
+        &__twitter{
+            &__cards{
+                gap: 40px;
+                &__card{
+                    width: 700px;
+                    height: 240px;
+                    // border-radius: 4px;
+                    // box-shadow: 3px 4px 3px  #9d9d9d;
+                }
+                .tcard2{
+                    height: 740px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:830px) {
+    .platforms{
+        // padding: 140px 0;
+        &__title{
+            font-size: 40px;
+            line-height: 45px;    
+        }
+        &__cards{
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 25px;
+            // margin: 75px 0;
+            .card{
+                width: 120px;
+                height: 120px;
+                // border-radius: 8px;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                &__media{
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+        &__twitter{
+            &__cards{
+                gap: 40px;
+                &__card{
+                    width: 600px;
+                    height: 205px;
+                    // border-radius: 4px;
+                    // box-shadow: 3px 4px 3px  #9d9d9d;
+                }
+                .tcard2{
+                    height: 600px;
+                }
+            }
+        }
+        &__btn{
+            padding: 8px 25px;
+            font-size: 12px;
+        }
+    }
+}
+@media only screen and (max-width:630px) {
+    .platforms{
+        // padding: 140px 0;
+        &__title{
+            font-size: 36px;
+            line-height: 40px;    
+        }
+        &__cards{
+            // grid-template-columns: 1fr 1fr 1fr 1fr;
+            // grid-template-rows: 1fr 1fr;
+            gap: 20px;
+            // margin: 75px 0;
+            .card{
+                width: 100px;
+                height: 100px;
+                // border-radius: 8px;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                &__media{
+                    // width: 50px;
+                    // height: 50px;
+                }
+            }
+        }
+        &__twitter{
+            &__cards{
+                gap: 35px;
+                &__card{
+                    width: 500px;
+                    height: 155px;
+                    // border-radius: 4px;
+                    // box-shadow: 3px 4px 3px  #9d9d9d;
+                }
+                .tcard2{
+                    height: 500px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:530px) {
+    .platforms{
+        // padding: 140px 0;
+        &__title{
+            font-size: 32px;
+            line-height: 35px;    
+        }
+        &__cards{
+            // grid-template-columns: 1fr 1fr 1fr 1fr;
+            // grid-template-rows: 1fr 1fr;
+            gap: 10px;
+            // margin: 75px 0;
+            .card{
+                width: 80px;
+                height: 80px;
+                // border-radius: 8px;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                &__media{
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+        &__twitter{
+            &__cards{
+                gap: 30px;
+                &__card{
+                    width: 350px;
+                    height: 100px;
+                    // border-radius: 4px;
+                    // box-shadow: 3px 4px 3px  #9d9d9d;
+                }
+                .tcard2{
+                    height: 350px;
+                }
+            }
+            &__btn{
+                margin-top: 50px;
+                padding: 8px 20px;
+                font-size: 10px;
+            }
+        }
+    }
+}
+@media only screen and (max-width:390px) {
+    .platforms{
+        // padding: 140px 0;
+        &__title{
+            font-size: 28px;
+            line-height: 30px;    
+        }
+        &__cards{
+            // grid-template-columns: 1fr 1fr 1fr 1fr;
+            // grid-template-rows: 1fr 1fr;
+            gap: 8px;
+            // margin: 75px 0;
+            .card{
+                width: 60px;
+                height: 60px;
+                // border-radius: 8px;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                &__media{
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+        }
+        &__twitter{
+            &__cards{
+                gap: 25px;
+                &__card{
+                    width: 280px;
+                    height: 60px;
+                    // border-radius: 4px;
+                    // box-shadow: 3px 4px 3px  #9d9d9d;
+                }
+                .tcard2{
+                    height: 280px;
+                }
+            }
+            &__btn{
+                margin-top: 30px;
+                padding: 8px 17px;
+                font-size: 7px;
+            }
+        }
+    }
+}
