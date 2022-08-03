@@ -41,6 +41,12 @@
             line-height: 100%;
             text-align: center;
             color: #FFFFFF;
+            &:hover{
+                transform: translate(0px, -0.5px);
+            }
+            &>a:hover{
+                opacity: 1;
+            }
         }
 
         &__btns {
@@ -58,6 +64,12 @@
                 line-height: 100%;
                 text-align: center;
                 color: #FFFFFF;
+                &:hover{
+                    transform: translate(0px, -0.5px);
+                }
+                &>a:hover{
+                    opacity: 1;
+                }
             }
 
             &__btn2 {
@@ -70,6 +82,12 @@
                 text-align: center;
                 color: #000000;
                 background-color: #FFFFFF;
+                &:hover{
+                    transform: translate(0px, -0.5px);
+                }
+                &>a:hover{
+                    opacity: 1;
+                }
             }
         }
 
@@ -106,7 +124,7 @@
 
                 &__items {
                     position: fixed;
-                    top: 101px;
+                    top: 100px;
                     left: 0;
                     padding: 0;
                     width: 100vw;
